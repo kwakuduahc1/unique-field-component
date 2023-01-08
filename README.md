@@ -20,3 +20,10 @@ Type anything apart from `kwaku` (case insensitive) is okay. The validation rule
 ## Error treatement
 HTTP errors are ignored and the form is set to valid
 
+## Validation passed
+![image](https://user-images.githubusercontent.com/11381582/211212100-aeef8101-926b-4514-91c6-8ad7cbffd684.png)
+
+
+## Validation failure
+
+<img width="343" alt="image" src="https://user-images.githubusercontent.com/11381582/211212147-e2800e5a-cb36-45d7-813a-cc1205407f58.png">
