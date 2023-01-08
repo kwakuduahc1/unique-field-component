@@ -4,7 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent, MRNService } from './app.component';
+import { AppComponent } from './app.component';
 import { UniqueMrnDirective } from './directives/unique-mrn.directive';
 
 @NgModule({
