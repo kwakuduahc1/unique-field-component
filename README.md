@@ -1,27 +1,22 @@
-# UniqueComps
+# Unique field Component
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
+The project demonstrates setting up a unique field validation in angular using a backend `HTTP`.
 
-## Development server
+## `HTTP` response template
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The test backend returns a JSON response object with a message field. The message is validated to contain the word `kwaku` (case coerced)
 
-## Code scaffolding
+```
+export interface Resp 
+{ 
+    message: string 
+}
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Testing
 
-## Build
+Type anything apart from `kwaku` (case insensitive) is okay. The validation rule `unqMrn` is set if you type `kwaku`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Error treatement
+HTTP errors are ignored and the form is set to valid
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

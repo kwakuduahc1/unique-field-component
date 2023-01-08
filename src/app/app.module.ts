@@ -5,12 +5,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UniqueMrnDirective } from './directives/unique-mrn.directive';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    UniqueMrnDirective
+    AppComponent
   ],
   imports: [
     BrowserModule,

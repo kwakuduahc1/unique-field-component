@@ -5,6 +5,7 @@ import { catchError, map, Observable, of, tap } from "rxjs";
 import { HttpClient } from '@angular/common/http';
 
 export interface Resp { message: string }
+
 @Injectable({ providedIn: 'root' })
 export class MRNService {
   constructor(private http: HttpClient) { }
