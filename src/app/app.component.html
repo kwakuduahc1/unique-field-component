@@ -1,0 +1,5 @@
+<form name="form" id="form" [formGroup]="form" (ngSubmit)="save()">
+  <input type="text" name="uname" id="uname" name="uname" placeholder="Username" formControlName="uname">
+  <span *ngIf="form.get('uname')?.getError('unqMrn')">Errors</span>
+  <button type="submit">Save</button>
+</form>
